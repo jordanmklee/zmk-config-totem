@@ -34,17 +34,32 @@
 
         space-layer {
             bindings = <&to 6>;
-            key-positions = <9 19 30>;
+            key-positions = <35 7 31>;
         };
 
         default-layer {
             bindings = <&to 0>;
-            key-positions = <0 10 21>;
+            key-positions = <20 2 34>;
         };
 
         soft-off-combo {
             bindings = <&soft_off>;
             key-positions = <9 19 30>;
+        };
+
+        gaming-layer {
+            bindings = <&to 7>;
+            key-positions = <35 37 31>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <17 18>;
+        };
+
+        backword {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <16 17 18>;
         };
     };
 
@@ -187,6 +202,15 @@
         &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &kp SPACE  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+            &kp TAB           &kp Q  &kp W      &kp E      &kp R    &trans  &trans  &trans  &trans  &trans
+            &kp LEFT_SHIFT    &kp A  &kp S      &kp D      &kp F    &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X      &kp C      &kp V    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LCTRL  &kp SPACE  &kp Y    &trans  &trans  &trans
             >;
         };
 
