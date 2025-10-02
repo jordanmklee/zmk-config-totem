@@ -55,12 +55,12 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <8 7>;
+            key-positions = <28 29>;
         };
 
         backword {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <6 7 8>;
+            key-positions = <27 28 29>;
         };
     };
 
